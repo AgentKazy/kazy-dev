@@ -12,7 +12,7 @@
   justify-content: flex-end;
 }
 
-.navbar .logo {
+.navbar .site-logo {
   font-weight: bold;
   color: var(--heading-color);
   letter-spacing: 1px;
@@ -21,9 +21,9 @@
   margin-right: auto;
 }
 
-.navbar .logo img {
+.navbar .site-logo img {
   margin-right: 10px;
-  filter: invert(85%);
+  filter: invert(95%);
   width: 36px;
 }
 

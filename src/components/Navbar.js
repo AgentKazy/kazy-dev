@@ -6,7 +6,7 @@ export default function Navbar() {
   return (
     <div className="navbar">
       <ul>
-        <li className="logo">
+        <li className="site-logo">
           <img src={Snowflake} alt="Kazy website logo" />
           <span className="brand">Kazy</span>
         </li>

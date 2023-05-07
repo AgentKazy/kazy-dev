@@ -1,19 +1,29 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
 
 /* variables */
 :root {
-  --bg-color: #343a41;
-  --text-color: #d9d9d9;
+  --bg-color: #292c34;
+  --text-color: #f2f2f2;
   --primary-color: #339af0; /* Blue 5 */
   --highlight-color: #fcc419; /* Yellow 5 */
 }
 
 /* base styles */
-body {
-  font-family: Poppins, sans-serif;
+* {
   margin: 0;
-  font-size: 1.1em;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
   background: var(--bg-color);
+  color: var(--text-color);
+  font-family: Inter, sans-serif;
+  font-size: 1.6rem;
 }
 
 ul,
