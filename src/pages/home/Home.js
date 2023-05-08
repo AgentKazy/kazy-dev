@@ -13,25 +13,32 @@ export default function Home() {
   return (
     <div className="container">
       <h2 className="subheading">Certificates obtained by Bruno</h2>
-      <div className="logos">
-        <div className="html-css logo-box dual-logo">
-          {/* <Link
-            className="htmlcss"
-            to={'https://ude.my/UC-a2ab9a40-ae7e-44e4-8753-bd03b6aaefe9/'}
-            target="_blank"
-          > */}
+      <div className="html-css logo-box dual-logo">
+        <Link
+          to={'https://ude.my/UC-a2ab9a40-ae7e-44e4-8753-bd03b6aaefe9/'}
+          target="_blank"
+        >
           <LogoHTML />
           <LogoCSS />
-          {/* </Link> */}
-        </div>
+        </Link>
+      </div>
 
-        <div className="javascript logo-box">
+      <div className="javascript logo-box">
+        <Link
+          to={'https://ude.my/UC-8eaaafa0-504b-4c88-838b-4c909d3335a1/'}
+          target="_blank"
+        >
           <LogoJS />
-        </div>
+        </Link>
+      </div>
 
-        <div className="reactjs logo-box">
+      <div className="reactjs logo-box">
+        <Link
+          to={'https://ude.my/UC-4f6cc7b2-3dd3-4c62-ba16-9671214e7d6d/'}
+          target="_blank"
+        >
           <LogoReact />
-        </div>
+        </Link>
       </div>
     </div>
   );

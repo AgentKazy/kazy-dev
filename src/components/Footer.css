@@ -1,0 +1,14 @@
+.footer {
+  justify-self: center;
+  align-self: end;
+  /* text-align: center; */
+  /* padding: 12.8rem 0; */
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+  margin-bottom: 1rem;
+}

@@ -1,15 +1,14 @@
 .navbar {
-  width: 100%;
-  padding: 30px 30px 0 30px;
   box-sizing: border-box;
-  margin-bottom: 80px;
+
+  padding: 2.4rem 3.6rem 2.4rem 3.6rem;
 }
 
 .navbar ul {
   display: flex;
   margin: 0 auto;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
 .navbar .site-logo {
@@ -18,7 +17,6 @@
   letter-spacing: 1px;
   display: flex;
   align-items: center;
-  margin-right: auto;
 }
 
 .navbar .site-logo img {

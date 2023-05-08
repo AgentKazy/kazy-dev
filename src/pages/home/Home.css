@@ -1,14 +1,20 @@
 .container {
-  /* display: grid; */
+  max-width: 130rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr;
+  gap: 2.8rem;
+  justify-items: center;
   /* border: 1px solid green; */
-  padding: 5px;
 }
 
 .subheading {
-  text-align: center;
+  grid-column: 1 / -1;
   text-transform: uppercase;
-  margin-bottom: 1rem;
+  align-self: end;
 
   font-size: 1.6rem;
   font-weight: 700;
@@ -16,33 +22,19 @@
 
 /* Logos */
 
-.logos {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 100%;
-  justify-items: center;
-  align-items: center;
-  gap: 5rem;
-  position: relative;
-
-  /* border: 1px solid red; */
-  padding: 5px;
-}
-
 .logo-box {
-  display: flex;
+  /* display: grid; */
   align-items: center;
-  justify-content: center;
-  width: 30rem;
-  height: 30rem;
+  width: 18rem;
+  height: 18rem;
 
-  /* border: 1px solid #fff; */
+  /* border: 1px solid white; */
 }
 
 .logo {
-  width: 75%;
-  height: 75%;
-
+  display: block;
+  margin: 0 auto;
+  width: 100%;
   transition: all 0.2s;
   /* border: 1px solid blue; */
 }
@@ -59,15 +51,27 @@
 
 .html,
 .css {
-  width: 60%;
-  height: 60%;
-  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .html {
-  margin: 0 7rem 7rem 0;
+  position: absolute;
+  z-index: 1;
+  padding: 0 4rem 4rem 0;
 }
 
 .css {
-  margin: 7rem 0 0 7rem;
+  position: absolute;
+  padding: 4rem 0 0 4rem;
+}
+
+/* Media queries */
+
+@media (max-width: 56em) {
+  .container {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 5rem;
+  }
 }

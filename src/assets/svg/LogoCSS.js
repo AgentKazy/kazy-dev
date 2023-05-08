@@ -3,6 +3,8 @@ export default function LogoCSS() {
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 512 512"
+      width="512"
+      height="512"
       className="css logo"
     >
       <path
