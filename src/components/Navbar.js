@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 import Snowflake from '../assets/snowflake-light.svg';
 import LogoLinkedIn from '../assets/svg/LogoLinkedIn';
+import LogoGithub from '../assets/svg/LogoGithub';
 
 export default function Navbar() {
   return (
@@ -14,9 +15,12 @@ export default function Navbar() {
           <span className="brand">Kazy</span>
         </li>
 
-        <li>
+        <li className="nav-logos">
           <Link to="https://www.linkedin.com/in/bmrtins/" target="_blank">
             <LogoLinkedIn />
+          </Link>
+          <Link to="https://github.com/AgentKazy/" target="_blank">
+            <LogoGithub />
           </Link>
         </li>
       </ul>

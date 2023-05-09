@@ -1,12 +1,12 @@
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr 2fr;
-  gap: 2.8rem;
+  gap: 3.6rem;
   justify-items: center;
   /* border: 1px solid green; */
 }
@@ -17,7 +17,7 @@
   align-self: end;
 
   font-size: 1.6rem;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 /* Logos */
@@ -64,6 +64,37 @@
 .css {
   position: absolute;
   padding: 4rem 0 0 4rem;
+}
+
+/* Disabled (In Progress) */
+
+.mysql-box {
+  position: relative;
+}
+
+.mysql {
+  filter: saturate(0);
+}
+
+.in-progress {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  right: 0;
+  height: 2.5rem;
+  line-height: 2.5rem;
+
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #333;
+  background-color: #ffd43b;
+  transform: translate(0, -50%) rotate(35deg);
+
+  z-index: 1;
 }
 
 /* Media queries */

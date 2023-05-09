@@ -33,4 +33,14 @@
 
 .navbar .brand {
   color: var(--text-color);
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.nav-logos {
+  display: flex;
+}
+
+.nav-logo {
+  width: 32px;
 }
