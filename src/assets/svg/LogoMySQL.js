@@ -9,7 +9,7 @@ export default function LogoMySQL() {
       version="1.1"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlSpace="preserve"
-      xmlnsSerif="http://www.serif.com/"
+      xmlnsserif="http://www.serif.com/"
       style={{
         fillRule: 'evenodd',
         clipRule: 'evenodd',

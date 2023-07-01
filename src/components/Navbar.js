@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 
 // Styles & Images
 import './Navbar.css';
@@ -7,12 +8,20 @@ import LogoLinkedIn from '../assets/svg/LogoLinkedIn';
 import LogoGithub from '../assets/svg/LogoGithub';
 
 export default function Navbar() {
+  const location = useLocation();
+
   return (
     <div className="navbar">
       <ul>
         <li className="site-logo">
           <img src={Snowflake} alt="Kazy website logo" />
-          <span className="brand">Kazy</span>
+          {location.pathname === '/' ? (
+            <span className="brand">Kazy</span>
+          ) : (
+            <Link to="/">
+              <span className="brand">Kazy</span>
+            </Link>
+          )}
         </li>
 
         <li className="nav-logos">
