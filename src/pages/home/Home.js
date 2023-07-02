@@ -14,15 +14,6 @@ export default function Home() {
   return (
     <div className="container">
       <h2 className="subheading">Certificates obtained by Bruno</h2>
-      <div className="reactjs-box logo-box">
-        <Link
-          to={'https://ude.my/UC-4f6cc7b2-3dd3-4c62-ba16-9671214e7d6d/'}
-          target="_blank"
-        >
-          <LogoReact />
-        </Link>
-      </div>
-
       <div className="javascript-box logo-box">
         <Link
           to={'https://ude.my/UC-8eaaafa0-504b-4c88-838b-4c909d3335a1/'}
@@ -39,6 +30,15 @@ export default function Home() {
         >
           <LogoHTML />
           <LogoCSS />
+        </Link>
+      </div>
+
+      <div className="reactjs-box logo-box">
+        <Link
+          to={'https://ude.my/UC-4f6cc7b2-3dd3-4c62-ba16-9671214e7d6d/'}
+          target="_blank"
+        >
+          <LogoReact />
         </Link>
       </div>
 
