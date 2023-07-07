@@ -13,7 +13,7 @@ import './Home.css';
 export default function Home() {
   return (
     <div className="container">
-      <h2 className="subheading">Certificates obtained by Bruno</h2>
+      <h2 className="subheading noselect">Certificates obtained by Bruno</h2>
       <div className="javascript-box logo-box">
         <Link
           to={'https://ude.my/UC-8eaaafa0-504b-4c88-838b-4c909d3335a1/'}
@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       <div className="mysql-box logo-box">
-        <span className="in-progress">In progress</span>
+        <span className="in-progress noselect">In progress</span>
         <LogoMySQL />
       </div>
     </div>

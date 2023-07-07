@@ -16,10 +16,10 @@ export default function Navbar() {
         <li className="site-logo">
           <img src={Snowflake} alt="Kazy website logo" />
           {location.pathname === '/' ? (
-            <span className="brand">Kazy</span>
+            <span className="brand noselect">Kazy</span>
           ) : (
             <Link to="/">
-              <span className="brand">Kazy</span>
+              <span className="brand noselect">Kazy</span>
             </Link>
           )}
         </li>

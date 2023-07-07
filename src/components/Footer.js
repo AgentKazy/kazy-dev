@@ -6,7 +6,7 @@ export default function Footer() {
 
   return (
     <div className="footer">
-      <p className="copyright">
+      <p className="copyright noselect">
         Copyright &copy; <span className="year">{currentYear}</span> by Bruno.
         All rights reserved.
       </p>
