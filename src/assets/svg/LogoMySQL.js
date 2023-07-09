@@ -5,7 +5,7 @@ export default function LogoMySQL() {
       viewBox="0 0 1000 692"
       width="100%"
       height="100%"
-      className="mysql"
+      className="mysql logo"
       version="1.1"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       xmlSpace="preserve"

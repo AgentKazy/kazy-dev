@@ -43,8 +43,13 @@ export default function Home() {
       </div>
 
       <div className="mysql-box logo-box">
-        <span className="in-progress noselect">In progress</span>
-        <LogoMySQL />
+        {/* <span className="in-progress noselect">In progress</span> */}
+        <Link
+          to={'https://ude.my/UC-ce3021d5-6158-42f6-b20a-95d8afcaa43b/'}
+          target="_blank"
+        >
+          <LogoMySQL />
+        </Link>
       </div>
     </div>
   );

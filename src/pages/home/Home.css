@@ -34,8 +34,8 @@
 .logo-box {
   /* display: grid; */
   align-items: center;
-  width: 18rem;
-  height: 18rem;
+  width: 20rem;
+  height: 20rem;
 
   /* border: 1px solid white; */
 }
@@ -77,12 +77,9 @@
 
 /* Disabled (In Progress) */
 
-.mysql-box {
-  position: relative;
-}
-
-.mysql {
+.disabled {
   filter: saturate(0);
+  position: relative;
 }
 
 .in-progress {
