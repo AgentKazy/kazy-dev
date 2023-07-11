@@ -14,7 +14,7 @@ export default function Navbar() {
     <div className="navbar">
       <ul>
         <li className="site-logo">
-          <img src={Snowflake} alt="Kazy website logo" />
+          <img className="spin" src={Snowflake} alt="Kazy website logo" />
           {location.pathname === '/' ? (
             <span className="brand noselect">Kazy</span>
           ) : (
