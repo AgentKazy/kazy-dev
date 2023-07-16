@@ -17,7 +17,7 @@ export default function Home() {
       <h2 className="subheading noselect">
         Certificates obtained by Bruno (Click to visit!)
       </h2>
-      <div className="javascript-box logo-box anim">
+      <div className="logo-box anim">
         <Link
           to={'https://ude.my/UC-8eaaafa0-504b-4c88-838b-4c909d3335a1/'}
           target="_blank"
@@ -26,7 +26,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="html-css-box logo-box dual-logo anim">
+      <div className="logo-box anim">
         <Link
           to={'https://ude.my/UC-a2ab9a40-ae7e-44e4-8753-bd03b6aaefe9/'}
           target="_blank"
@@ -36,7 +36,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="reactjs-box logo-box anim">
+      <div className="logo-box anim">
         <Link
           to={'https://ude.my/UC-4f6cc7b2-3dd3-4c62-ba16-9671214e7d6d/'}
           target="_blank"
@@ -45,7 +45,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="mysql-box logo-box anim">
+      <div className="logo-box anim">
         <Link
           to={'https://ude.my/UC-ce3021d5-6158-42f6-b20a-95d8afcaa43b/'}
           target="_blank"
@@ -54,8 +54,7 @@ export default function Home() {
         </Link>
       </div>
 
-      <div className="nodejs-box logo-box">
-        <span className="in-progress noselect">In progress</span>
+      <div className="logo-box progress">
         <LogoNode />
       </div>
     </div>
