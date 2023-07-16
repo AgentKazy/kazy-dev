@@ -74,10 +74,10 @@
 
 .progress::after {
   /* display: inline-block; */
-  content: 'In progress';
+  content: 'In progress (10%)';
   position: absolute;
   text-align: center;
-  width: 20rem;
+  width: 100%;
   top: 50%;
 
   text-transform: uppercase;
