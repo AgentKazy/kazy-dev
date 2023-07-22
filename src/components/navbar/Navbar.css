@@ -1,0 +1,31 @@
+.navbar {
+  padding: 2.4rem 3.6rem 2.4rem 3.6rem;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar a {
+  color: var(--text-color);
+  text-decoration: none;
+  margin-right: 20px;
+}
+/* -------------- */
+/* Logo animation */
+/* -------------- */
+
+.spin {
+  animation: spin 17s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: scale(1) rotate(0deg);
+  }
+  to {
+    transform: scale(1) rotate(360deg);
+  }
+}

@@ -1,0 +1,14 @@
+.nav-logos {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+.nav-logos a:last-child {
+  margin: 0;
+}
