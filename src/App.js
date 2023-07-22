@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, Navigate, Route, Routes } from 'react-router-dom';
 
 // Styles
 import './App.css';
@@ -10,14 +10,15 @@ import Cv from './assets/Cv';
 import Footer from './components/Footer';
 
 function App() {
+  const subhead = 'Certificates obtained by Bruno (Click to visit!)';
   return (
     <div className="App">
       <BrowserRouter>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home subhead={subhead} />} />
           <Route path="/cv" element={<Cv />} />
-          <Route path="*" element={<Home />} />
+          <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
       </BrowserRouter>

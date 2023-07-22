@@ -11,12 +11,10 @@ import LogoNode from '../../assets/svg/LogoNode';
 // Styles
 import './Home.css';
 
-export default function Home() {
+export default function Home({ subhead }) {
   return (
     <div className="container">
-      <h2 className="subheading noselect">
-        Certificates obtained by Bruno (Click to visit!)
-      </h2>
+      <h2 className="subheading noselect">{subhead}</h2>
       <div className="logo-box anim">
         <Link
           to={'https://ude.my/UC-8eaaafa0-504b-4c88-838b-4c909d3335a1/'}
