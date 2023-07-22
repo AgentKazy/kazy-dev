@@ -3,7 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 // Styles & Images
 import './Logo.css';
-import Snow from '../../assets/snowflake-light.svg';
+import Snow from '../../assets/svg/snowflake-light.svg';
 
 export default function Logo() {
   const location = useLocation();
