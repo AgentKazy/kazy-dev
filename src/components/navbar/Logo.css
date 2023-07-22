@@ -1,20 +1,20 @@
 .site-logo {
-  font-weight: bold;
-  color: var(--text-color);
-  letter-spacing: 1px;
   display: flex;
   align-items: center;
+  color: var(--text-color);
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
 .site-logo img {
+  width: 36px;
   margin-right: 10px;
   filter: invert(95%);
-  width: 36px;
 }
 
 .brand {
+  font-size: 1.6rem;
+  font-weight: 700;
   color: var(--text-color);
   text-transform: uppercase;
-  font-weight: 700;
-  font-size: 1.6rem;
 }

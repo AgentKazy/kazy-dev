@@ -1,10 +1,11 @@
 .navbar {
+  display: grid;
   padding: 2.4rem 3.6rem 2.4rem 3.6rem;
+  align-items: center;
 }
 
 .navbar ul {
   display: flex;
-  align-items: center;
   justify-content: space-between;
 }
 
@@ -13,6 +14,7 @@
   text-decoration: none;
   margin-right: 20px;
 }
+
 /* -------------- */
 /* Logo animation */
 /* -------------- */
