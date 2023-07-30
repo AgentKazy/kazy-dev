@@ -34,7 +34,7 @@ export default function Home({ subhead }) {
         </Link>
       </div>
 
-      <div className="logo-box anim">
+      <div className="logo-box anim progress">
         <Link
           to={'https://ude.my/UC-4f6cc7b2-3dd3-4c62-ba16-9671214e7d6d/'}
           target="_blank"
@@ -52,7 +52,7 @@ export default function Home({ subhead }) {
         </Link>
       </div>
 
-      <div className="logo-box progress">
+      <div className="logo-box paused">
         <LogoNode />
       </div>
     </div>
