@@ -73,9 +73,9 @@
 }
 
 .progress::after {
-  --progress: 10%;
+  --progress: 15%;
   /* display: inline-block; */
-  content: '#2, in progress (10%)';
+  content: '#2, in progress (15%)';
   position: absolute;
   text-align: center;
   width: 100%;
