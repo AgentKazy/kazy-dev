@@ -1,6 +1,6 @@
 export default function LogoHTML() {
   return (
-    <svg viewBox="0 0 512 512" className="html logo">
+    <svg viewBox="0 0 512 512" className="html logo" alt="HTML logo">
       <path fill="#E34F26" d="M71,460 L30,0 481,0 440,460 255,512" />
       <path fill="#EF652A" d="M256,472 L405,431 440,37 256,37" />
       <path

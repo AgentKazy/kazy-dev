@@ -4,11 +4,12 @@ export default function LogoMySQL() {
       viewBox="0 0 1000 692"
       className="mysql logo"
       style={{
-        fillRule: 'evenodd',
-        clipRule: 'evenodd',
-        strokeLinejoin: 'round',
-        strokeMiterlimit: '2',
+        fillRule: "evenodd",
+        clipRule: "evenodd",
+        strokeLinejoin: "round",
+        strokeMiterlimit: "2",
       }}
+      alt="MySQL logo"
     >
       <g transform="matrix(4.16667,0,0,4.16667,0,0)">
         <path

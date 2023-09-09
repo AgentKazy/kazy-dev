@@ -1,6 +1,6 @@
 export default function LogoCSS() {
   return (
-    <svg viewBox="0 0 512 512" className="css logo">
+    <svg viewBox="0 0 512 512" className="css logo" alt="CSS logo">
       <path
         fill="#264de4"
         d="M71.357 460.819L30.272 0h451.456l-41.129 460.746L255.724 512z"

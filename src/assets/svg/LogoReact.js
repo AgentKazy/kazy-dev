@@ -1,6 +1,11 @@
 export default function LogoReact() {
   return (
-    <svg viewBox="-10.5 -9.45 21 18.9" color="#149eca" className="react logo">
+    <svg
+      viewBox="-10.5 -9.45 21 18.9"
+      color="#149eca"
+      alt="React logo"
+      className="react logo"
+    >
       <circle cx="0" cy="0" r="2" fill="currentColor"></circle>
       <g stroke="currentColor" strokeWidth="1" fill="none">
         <ellipse rx="10" ry="4.5"></ellipse>
