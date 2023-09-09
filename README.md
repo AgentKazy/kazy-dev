@@ -1,1 +1,1 @@
-# Current dev version of main website: http://kazy.pt
+# Current dev version of main website: http://kazy.pt/
