@@ -13,14 +13,14 @@ import "./Home.css";
 
 const certs = [
   {
-    id: 1,
+    id: 0,
     name: "JavaScript",
     link: "https://ude.my/UC-8eaaafa0-504b-4c88-838b-4c909d3335a1/",
     logo1: LogoJS,
     logoClass: "anim",
   },
   {
-    id: 2,
+    id: 1,
     name: "HTML & CSS",
     link: "https://ude.my/UC-a2ab9a40-ae7e-44e4-8753-bd03b6aaefe9/",
     logo1: LogoHTML,
@@ -28,9 +28,16 @@ const certs = [
     logoClass: "anim",
   },
   {
-    id: 3,
+    id: 2,
     name: "React",
     link: "https://ude.my/UC-4f6cc7b2-3dd3-4c62-ba16-9671214e7d6d/",
+    logo1: LogoReact,
+    logoClass: "anim",
+  },
+  {
+    id: 3,
+    name: "React",
+    link: null,
     logo1: LogoReact,
     logoClass: "anim progress",
   },

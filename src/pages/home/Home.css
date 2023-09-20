@@ -1,10 +1,9 @@
 .container {
-  max-width: 120rem;
   margin: 0 auto;
   padding: 0 3.2rem;
 
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   grid-template-rows: 1fr 2fr;
   gap: 3.6rem;
   justify-items: center;
@@ -130,7 +129,15 @@
 
 /* Media queries */
 
-@media (max-width: 56em) {
+@media (max-width: 93rem) {
+  .container {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    gap: 5rem;
+  }
+}
+
+@media (max-width: 56rem) {
   .container {
     grid-template-columns: 1fr;
     justify-items: center;
