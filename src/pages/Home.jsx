@@ -7,6 +7,7 @@ import LogoJS from "../assets/svg/LogoJS";
 import LogoReact from "../assets/svg/LogoReact";
 import LogoMySQL from "../assets/svg/LogoMySQL";
 import LogoNode from "../assets/svg/LogoNode";
+import Star from "../assets/svg/Star";
 
 // Styles
 import styles from "./Home.module.css";
@@ -20,6 +21,7 @@ const certs = [
     logoClass: `${styles.anim} ${styles.anchor}`,
     showProgressText: false,
     paused: false,
+    starred: false,
   },
   {
     id: 1,
@@ -30,6 +32,7 @@ const certs = [
     logoClass: `${styles.anim} ${styles.anchor} ${styles.logoContainer}`,
     showProgressText: false,
     paused: false,
+    starred: false,
   },
   {
     id: 2,
@@ -39,6 +42,7 @@ const certs = [
     logoClass: `${styles.anim} ${styles.anchor}`,
     showProgressText: false,
     paused: false,
+    starred: false,
   },
   {
     id: 3,
@@ -49,6 +53,7 @@ const certs = [
     showProgressText: true,
     progress: 50,
     paused: false,
+    starred: false,
   },
   {
     id: 4,
@@ -58,6 +63,7 @@ const certs = [
     logoClass: `${styles.anim} ${styles.anchor}`,
     showProgressText: false,
     paused: false,
+    starred: false,
   },
   {
     id: 5,
@@ -67,6 +73,7 @@ const certs = [
     logoClass: `${styles.anchor} ${styles.paused}`,
     showProgressText: false,
     paused: true,
+    starred: false,
   },
 ];
 
@@ -108,6 +115,11 @@ function Home() {
                 }}
               >
                 Paused
+              </div>
+            )}
+            {cert.starred && (
+              <div className={styles.star}>
+                <Star />
               </div>
             )}
           </div>
