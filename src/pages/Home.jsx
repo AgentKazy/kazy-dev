@@ -104,7 +104,7 @@ function Home() {
                   "--progress": `${cert.progress}%`,
                 }}
               >
-                In progress ({cert.progress}%)
+                #2, in progress ({cert.progress}%)
               </div>
             )}
             {cert.paused && (
