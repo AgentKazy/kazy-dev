@@ -45,7 +45,7 @@ const certs = [
     name: "React",
     link: null,
     logo1: LogoReact,
-    logoClass: `${styles.anim} ${styles.anchor}`,
+    logoClass: `${styles.anchor}`,
     showProgressText: true,
     progress: 50,
     paused: false,
