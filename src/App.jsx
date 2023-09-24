@@ -11,7 +11,7 @@ import Cv from "./pages/Cv";
 
 function App() {
   return (
-    <div className={styles.home}>
+    <div className={`${styles.home} noselect`}>
       <BrowserRouter>
         <Navbar />
 
