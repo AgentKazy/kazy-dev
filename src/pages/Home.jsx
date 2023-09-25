@@ -61,7 +61,7 @@ const certs = [
     logo1: LogoReact,
     logoClass: `${styles.anchor}`,
     showProgressText: true,
-    progress: 50,
+    progress: 55,
     paused: false,
     starred: false,
   },
