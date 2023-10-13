@@ -13,12 +13,12 @@
 
 .navbar a {
   text-decoration: none;
-  color: var(--text-color);
-  margin-right: 20px;
 }
 
 .logo {
   display: block;
   height: 3.6rem;
   width: 3.6rem;
+  color: var(--text-color);
+  margin-left: 3rem;
 }

@@ -7,6 +7,7 @@ import styles from "./Navbar.module.css";
 import Logo from "./Logo";
 import LogoLinkedIn from "../assets/svg/LogoLinkedIn";
 import LogoGithub from "../assets/svg/LogoGithub";
+import DropdownButton from "./DropdownButton";
 
 function Navbar() {
   return (
@@ -14,6 +15,9 @@ function Navbar() {
       <Logo />
 
       <ul>
+        <li>
+          <DropdownButton />
+        </li>
         <li>
           <Link
             to="https://www.linkedin.com/in/bmrtins/"
