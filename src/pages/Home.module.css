@@ -5,7 +5,7 @@
 .container {
   display: grid;
   grid-template-columns: 1fr var(--logo-size) 1fr;
-  grid-template-rows: auto var(--logo-size) 1fr;
+  grid-template-rows: auto var(--logo-size) var(--logo-size) 1fr;
   align-items: center;
   justify-content: center;
   gap: 4rem;
@@ -20,8 +20,9 @@
   font-weight: 400;
 }
 
-/* Center and set dimensions for SVGs */
-.container svg {
+/* Center and set dimensions for SVGs and IMGs */
+.container svg,
+.container img {
   display: block;
   margin: 0 auto;
   max-width: 100%; /* Ensure the SVG doesn't exceed its container's width */
@@ -29,46 +30,61 @@
   width: calc(var(--logo-size) * 0.95);
 }
 
+/* Give white border to IMGs */
+.container img {
+  border: white 2px solid;
+  border-radius: 5px;
+  background-color: white;
+}
+
 /* Align JavaScript logo to bottom right */
 .container > :nth-child(2) {
-  justify-self: flex-end;
-  align-self: flex-end;
+  justify-self: flex-end; /* Right */
+  align-self: flex-end; /* Bottom */
   margin-bottom: 0;
 }
 
 /* Align HTML & CSS logos to bottom center */
 .container > :nth-child(3) {
   justify-self: center;
-  align-self: flex-end;
+  align-self: flex-end; /* Bottom */
   margin-bottom: 0;
 }
 
 /* Align React logo to bottom left */
 .container > :nth-child(4) {
-  justify-self: flex-start;
-  align-self: flex-end;
+  justify-self: flex-start; /* Left */
+  align-self: flex-end; /* Bottom */
   margin-bottom: 0;
 }
 
-/* Align second React logo to top right */
+/* Align MySQL logo to top right */
 .container > :nth-child(5) {
-  justify-self: flex-end;
-  align-self: flex-start;
+  justify-self: flex-end; /* Right */
+  align-self: flex-start; /* Top */
   margin-top: 0;
 }
 
-/* Align MySQL logo to top center */
+/* Align second React logo to top center */
 .container > :nth-child(6) {
   justify-self: center;
-  align-self: flex-start;
+  align-self: flex-start; /* Top */
+  margin-top: 0;
+}
+
+/* Align Fiori to top left */
+.container > :nth-child(7) {
+  justify-self: flex-start; /* Left */
+  align-self: flex-start; /* Top */
   margin-top: 0;
 }
 
 /* Align Node logo to top left */
-.container > :nth-child(7) {
-  justify-self: flex-start;
-  align-self: flex-start;
+.container > :nth-child(8) {
+  justify-self: center; /* Left */
+  align-self: flex-start; /* Top */
   margin-top: 0;
+  grid-column: 1 / -1;
 }
 
 /* Scale animation */
@@ -160,11 +176,13 @@
     padding-top: 2.5rem;
   }
 
-  .container > :nth-child(6) > a > svg {
-    height: calc(var(--logo-size) * 1.3);
-    width: calc(var(--logo-size) * 1.3);
+  /* Smaller JS logo */
+  .container > :nth-child(2) > a > svg {
+    height: calc(var(--logo-size) * 0.9);
+    width: calc(var(--logo-size) * 0.9);
   }
 
+  /* Center all logos */
   .container > :nth-child(n) {
     justify-self: center;
     align-self: center;

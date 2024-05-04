@@ -4,6 +4,7 @@ import LogoJS from "../assets/svg/LogoJS";
 import LogoReact from "../assets/svg/LogoReact";
 import LogoMySQL from "../assets/svg/LogoMySQL";
 import LogoNode from "../assets/svg/LogoNode";
+import LogoFiori from "../assets/svg/LogoFiori";
 import styles from "./Home.module.css";
 
 export const certs = [
@@ -70,6 +71,18 @@ export const certs = [
   },
   {
     id: 5,
+    name: "Fiori",
+    link: "https://www.credly.com/badges/5511006e-1123-4435-a5a5-cf5d270d2c34/linked_in_profile",
+    logo1: LogoFiori,
+    logoClass: `${styles.anim} ${styles.anchor}`,
+    showProgressText: false,
+    progressDescription: "Finished",
+    progress: 100,
+    paused: false,
+    starred: true,
+  },
+  {
+    id: 6,
     name: "Node",
     link: null,
     logo1: LogoNode,
