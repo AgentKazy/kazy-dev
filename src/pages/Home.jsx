@@ -12,7 +12,7 @@ function Home() {
     <main>
       <div className={styles.container}>
         <p className={styles.subheading}>
-          Certifications completed by Bruno (Click to visit!)
+          Certifications obtained by Bruno (Click to visit!)
         </p>
         {certs.map((cert) => (
           <div className={cert.logoClass} key={cert.id}>
