@@ -5,6 +5,7 @@ import LogoReact from "../assets/svg/LogoReact";
 import LogoMySQL from "../assets/svg/LogoMySQL";
 import LogoNode from "../assets/svg/LogoNode";
 import LogoFiori from "../assets/svg/LogoFiori";
+import LogoCloud from "../assets/svg/LogoCloud";
 import styles from "./Home.module.css";
 
 export const certs = [
@@ -83,14 +84,27 @@ export const certs = [
   },
   {
     id: 6,
+    name: "Backend ABAP Cloud",
+    link: "https://www.credly.com/badges/f374caa8-dc5a-4662-b952-313e4e2e3c46/linked_in_profile",
+    logo1: LogoCloud,
+    logoClass: `${styles.anim} ${styles.anchor}`,
+    showProgressText: false,
+    progressDescription: "Finished",
+    progress: 100,
+    paused: false,
+    starred: true,
+  },
+  {
+    id: 7,
     name: "Node",
     link: null,
     logo1: LogoNode,
-    logoClass: `${styles.anchor} ${styles.paused}`,
-    showProgressText: false,
+    // logoClass: `${styles.anchor} ${styles.paused}`,
+    logoClass: `${styles.anchor}`,
+    showProgressText: true,
     progressDescription: "In progress",
-    progress: 20,
-    paused: true,
+    progress: 5,
+    paused: false,
     starred: false,
   },
 ];

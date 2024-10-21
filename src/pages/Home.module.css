@@ -4,16 +4,17 @@
 
 .container {
   display: grid;
-  grid-template-columns: 1fr var(--logo-size) 1fr;
-  grid-template-rows: auto var(--logo-size) var(--logo-size) 1fr;
+  grid-template-columns: 1fr var(--logo-size) var(--logo-size) var(--logo-size) 1fr; /* 3 logo columns in the middle, 1 empty on each side */
+  grid-template-rows: auto var(--logo-size) var(--logo-size) auto; /* Three rows */
   align-items: center;
   justify-content: center;
   gap: 4rem;
+  overflow: visible;
 }
 
 .subheading {
   display: block;
-  grid-column: 1 / -1;
+  grid-column: 1 / -1; /* Span across all columns */
   align-self: flex-end;
   text-align: center;
   font-size: 1.6rem;
@@ -37,54 +38,73 @@
   background-color: white;
 }
 
-/* Align JavaScript logo to bottom right */
+/* Align JavaScript logo (top row, right) */
 .container > :nth-child(2) {
-  justify-self: flex-end; /* Right */
-  align-self: flex-end; /* Bottom */
+  grid-column: 2 / 3; /* First logo in the second column */
+  justify-self: flex-end;
+  align-self: flex-end;
   margin-bottom: 0;
 }
 
-/* Align HTML & CSS logos to bottom center */
+/* Align HTML & CSS logos (top row, center) */
 .container > :nth-child(3) {
+  grid-column: 3 / 4; /* Second logo in the third column */
   justify-self: center;
-  align-self: flex-end; /* Bottom */
+  align-self: flex-end;
   margin-bottom: 0;
 }
 
-/* Align React logo to bottom left */
+/* Align React logo (top row, left) */
 .container > :nth-child(4) {
-  justify-self: flex-start; /* Left */
-  align-self: flex-end; /* Bottom */
+  grid-column: 4 / 5; /* Third logo in the fourth column */
+  justify-self: flex-start;
+  align-self: flex-end;
   margin-bottom: 0;
 }
 
-/* Align MySQL logo to top right */
+/* Align MySQL logo (middle row, right) */
 .container > :nth-child(5) {
-  justify-self: flex-end; /* Right */
-  align-self: flex-start; /* Top */
+  grid-column: 2 / 3; /* First logo in the second row */
+  justify-self: flex-end;
+  align-self: flex-start;
   margin-top: 0;
 }
 
-/* Align second React logo to top center */
+/* Align second React logo (middle row, center) */
 .container > :nth-child(6) {
+  grid-column: 3 / 4; /* Second logo in the second row */
   justify-self: center;
-  align-self: flex-start; /* Top */
+  align-self: flex-start;
   margin-top: 0;
 }
 
-/* Align Fiori to top left */
+/* Align Fiori logo (middle row, left) */
 .container > :nth-child(7) {
-  justify-self: flex-start; /* Left */
-  align-self: flex-start; /* Top */
+  grid-column: 4 / 5; /* Third logo in the second row */
+  justify-self: flex-start;
+  align-self: flex-start;
   margin-top: 0;
 }
 
-/* Align Node logo to top left */
+/* Align SAP Backend ABAP Cloud (bottom row, first logo, center) */
 .container > :nth-child(8) {
-  justify-self: center; /* Left */
-  align-self: flex-start; /* Top */
+  grid-column: 2 / 4; /* Span from column 2 to 4 */
+  justify-self: center;
+  align-self: center;
   margin-top: 0;
-  grid-column: 1 / -1;
+}
+
+/* Align Node logo (bottom row, second logo, center) */
+.container > :nth-child(9) {
+  grid-column: 3 / 5; /* Place it in column 4 */
+  justify-self: center;
+  align-self: center;
+  margin-top: 0;
+}
+
+/* To prevent overlap with other elements */
+.container > :nth-child(n + 8) {
+  grid-row: 4; /* Ensure logos in last row are on row 3 */
 }
 
 /* Scale animation */
