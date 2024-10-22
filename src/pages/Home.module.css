@@ -187,13 +187,14 @@
 /* MEDIA QUERIES */
 
 @media (max-width: 56rem) {
+  .subheading {
+    grid-column: auto;
+    padding-top: 3rem;
+  }
+
   .container {
     grid-template-columns: 1fr;
     gap: 5rem;
-  }
-
-  .subheading {
-    padding-top: 2.5rem;
   }
 
   /* Smaller JS logo */
@@ -206,6 +207,8 @@
   .container > :nth-child(n) {
     justify-self: center;
     align-self: center;
+    grid-column: auto; /* Allow default column placement */
+    grid-row: auto; /* Reset row placement */
     margin: 0;
   }
 }
