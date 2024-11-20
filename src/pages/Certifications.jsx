@@ -103,7 +103,7 @@ export const certs = [
     logoClass: `${styles.anchor}`,
     showProgressText: true,
     progressDescription: "In progress",
-    progress: 23,
+    progress: 25,
     paused: false,
     starred: false,
   },
