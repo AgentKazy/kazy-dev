@@ -38,7 +38,7 @@
   background-color: white;
 }
 
-/* Align JavaScript logo (top row, right) */
+/* Align JavaScript logo */
 .container > :nth-child(2) {
   grid-column: 2 / 3; /* First logo in the second column */
   justify-self: flex-end;
@@ -46,7 +46,7 @@
   margin-bottom: 0;
 }
 
-/* Align HTML & CSS logos (top row, center) */
+/* Align HTML & CSS logos */
 .container > :nth-child(3) {
   grid-column: 3 / 4; /* Second logo in the third column */
   justify-self: center;
@@ -54,7 +54,7 @@
   margin-bottom: 0;
 }
 
-/* Align React logo (top row, left) */
+/* Align React logo */
 .container > :nth-child(4) {
   grid-column: 4 / 5; /* Third logo in the fourth column */
   justify-self: flex-start;
@@ -62,50 +62,58 @@
   margin-bottom: 0;
 }
 
-/* Align MySQL logo (middle row, right) */
+/* Align MySQL logo */
 .container > :nth-child(5) {
   grid-column: 2 / 3; /* First logo in the second row */
+  justify-self: flex-end;
+  align-self: center;
+  margin-top: 0;
+}
+
+/* Align second React logo */
+.container > :nth-child(6) {
+  grid-column: 3 / 4; /* Second logo in the second row */
+  justify-self: center;
+  align-self: center;
+  margin-top: 0;
+}
+
+/* Align Fiori logo */
+.container > :nth-child(7) {
+  grid-column: 4 / 5; /* Third logo in the second row */
+  justify-self: flex-start;
+  align-self: center;
+  margin-top: 0;
+}
+
+/* Align SAP Backend ABAP Cloud */
+.container > :nth-child(8) {
+  grid-column: 2 / 3; /* First logo in the third row */
   justify-self: flex-end;
   align-self: flex-start;
   margin-top: 0;
 }
 
-/* Align second React logo (middle row, center) */
-.container > :nth-child(6) {
-  grid-column: 3 / 4; /* Second logo in the second row */
+/* Align SAP CAP */
+.container > :nth-child(9) {
+  grid-column: 3 / 4; /* Second logo in the third row */
   justify-self: center;
   align-self: flex-start;
   margin-top: 0;
 }
 
-/* Align Fiori logo (middle row, left) */
-.container > :nth-child(7) {
-  grid-column: 4 / 5; /* Third logo in the second row */
+/* Align Node logo */
+.container > :nth-child(10) {
+  grid-column: 4 / 5; /* Third logo in the third row */
   justify-self: flex-start;
   align-self: flex-start;
   margin-top: 0;
 }
 
-/* Align SAP Backend ABAP Cloud (bottom row, first logo, center) */
-.container > :nth-child(8) {
-  grid-column: 2 / 4; /* Span from column 2 to 4 */
-  justify-self: center;
-  align-self: center;
-  margin-top: 0;
-}
-
-/* Align Node logo (bottom row, second logo, center) */
-.container > :nth-child(9) {
-  grid-column: 3 / 5; /* Place it in column 4 */
-  justify-self: center;
-  align-self: center;
-  margin-top: 0;
-}
-
 /* To prevent overlap with other elements */
-.container > :nth-child(n + 8) {
-  grid-row: 4; /* Ensure logos in last row are on row 3 */
-}
+/* .container > :nth-child(n + 8) { */
+/* grid-row: 4; Ensure logos in last row are on row 3 */
+/* } */
 
 /* Scale animation */
 .anim {

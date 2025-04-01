@@ -6,6 +6,7 @@ import LogoMySQL from "../assets/svg/LogoMySQL";
 import LogoNode from "../assets/svg/LogoNode";
 import LogoFiori from "../assets/svg/LogoFiori";
 import LogoCloud from "../assets/svg/LogoCloud";
+import LogoCap from "../assets/svg/LogoCap";
 import styles from "./Home.module.css";
 
 export const certs = [
@@ -96,6 +97,18 @@ export const certs = [
   },
   {
     id: 7,
+    name: "SAP CAP",
+    link: "https://www.credly.com/badges/9ca64daa-ec69-4494-898a-8c2d3e072f8d/linked_in_profile",
+    logo1: LogoCap,
+    logoClass: `${styles.anim} ${styles.anchor}`,
+    showProgressText: false,
+    progressDescription: "Finished",
+    progress: 100,
+    paused: false,
+    starred: true,
+  },
+  {
+    id: 8,
     name: "Node",
     link: null,
     logo1: LogoNode,
