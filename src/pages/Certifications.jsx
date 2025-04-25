@@ -117,7 +117,7 @@ export const certs = [
     showProgressText: true,
     progressDescription: "In progress",
     progress: 34,
-    paused: false,
+    paused: true,
     starred: false,
   },
 ];
