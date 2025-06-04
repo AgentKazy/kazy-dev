@@ -41,7 +41,7 @@ function Home() {
               <div
                 className={styles.progressText}
                 style={{
-                  "background-color": "#f6f1e0",
+                  backgroundColor: "#f6f1e0",
                 }}
               >
                 Paused

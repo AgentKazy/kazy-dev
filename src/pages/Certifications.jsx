@@ -93,7 +93,7 @@ export const certs = [
     progressDescription: "Finished",
     progress: 100,
     paused: false,
-    starred: true,
+    starred: false,
   },
   {
     id: 7,
@@ -105,7 +105,7 @@ export const certs = [
     progressDescription: "Finished",
     progress: 100,
     paused: false,
-    starred: true,
+    starred: false,
   },
   {
     id: 8,
